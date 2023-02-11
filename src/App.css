@@ -1,0 +1,36 @@
+.box {
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-item {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-row{
+  display: flex;
+}
+
+.box-row > .box-item {
+  border-right: 1px solid black;
+}
+
+.box-row > .box-item:last-of-type {
+  border-right: none;
+}
+
+.box-row {
+  border-bottom: 1px solid black;
+}
+
+.box-row:last-of-type {
+  border-bottom: none;
+}
